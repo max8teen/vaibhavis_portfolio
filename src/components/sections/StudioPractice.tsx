@@ -2,6 +2,7 @@ import { Reveal } from "@/components/Reveal";
 import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import studioImg from "@/assets/hero2.jpg";
 
 // Sketch images — Unsplash CDN (loads in browser)
 const sketchImages = [
@@ -91,9 +92,9 @@ export function StudioPractice() {
                 className="overflow-hidden"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1400&q=85&auto=format&fit=crop"
-                  alt="Artist studio — brushes, oil paint, canvas in afternoon light"
-                  className="w-full aspect-[16/10] object-cover"
+                  src={studioImg}
+                  alt="Vaibhavi Dahiwal's studio — Ganesha drawing on easel with paints"
+                  className="w-full aspect-[16/10] object-cover object-center"
                 />
               </motion.div>
             </Reveal>

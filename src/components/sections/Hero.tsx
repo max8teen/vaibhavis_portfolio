@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImg from "@/assets/hero.jpg";
+import heroMobileImg from "@/assets/hero1.jpg";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -11,10 +12,17 @@ export function Hero() {
   return (
     <section ref={ref} className="relative h-screen w-full overflow-hidden">
       <motion.div style={{ y, scale }} className="absolute inset-0">
+        {/* Desktop image */}
         <img
           src={heroImg}
           alt="Vaibhavi Dahiwal studio with devotional Ganesha drawing on easel"
-          className="w-full h-full object-cover"
+          className="hidden md:block w-full h-full object-cover object-center"
+        />
+        {/* Mobile image — portraits & paintings wall */}
+        <img
+          src={heroMobileImg}
+          alt="Vaibhavi Dahiwal studio wall with portraits and paintings"
+          className="block md:hidden w-full h-full object-cover object-center"
         />
       </motion.div>
       <motion.div
