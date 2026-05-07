@@ -94,7 +94,7 @@ export function StudioPractice() {
                 <img
                   src={studioImg}
                   alt="Vaibhavi Dahiwal's studio — Ganesha drawing on easel with paints"
-                  className="w-full aspect-[16/10] object-cover object-center"
+                  className="w-full aspect-square object-cover"
                 />
               </motion.div>
             </Reveal>
